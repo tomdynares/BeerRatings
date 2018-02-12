@@ -1,4 +1,4 @@
-## Metis Introduction to Data Science - Final Project
+## Metis Introduction to Data Science - Final Project (as of 2/11/2018)
 
 The dataset that will be used for this project is titled `beer_reviews.csv` and originates from https://data.world/socialmediadata/beeradvocate
 
