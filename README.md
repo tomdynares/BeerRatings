@@ -27,17 +27,17 @@ I plan to use many if not all of the techs being taught in this class as well as
 * Analysis will need to be conducted to assess duplicates and other data anomalies
 
 ## Some questions to be asked of this dataset
-1- Is there a steady relationship between appearance, aroma, taste across different beer styles - can an overall rating be predicted based on training data from a given beer style against a different distinct beer style.  
+`1-` Is there a steady relationship between appearance, aroma, taste across different beer styles - can an overall rating be predicted based on training data from a given beer style against a different distinct beer style.  
 `2-` Of aroma, appearance, palate and taste - what attribute or combo of attributes can lead to an average review (=3), poor review (<3) good review (>3) - what techs to use? linear regression, decision tree, random forest
-3- How biased are raters to begin with e.g.  if a given rater has provided consistently high marks for a given beer style, how does this compare with different beer styles they have reviewed
-4- beer_abv - Is there a predictable correlation between this and any of the ratings we might expect to see on any combo of aroma, appearance, palate and taste - can ratings in these areas predict a range of ABV? 
-5- Amongst reviewers that do reviews across multiple beer styles, is there a correlation between how they rate aroma, palate, etc
-6- Do certain beer styles get higher ratings during certain times of year - is there a correlation?
+`3-` How biased are raters to begin with e.g.  if a given rater has provided consistently high marks for a given beer style, how does this compare with different beer styles they have reviewed
+`4-` beer_abv - Is there a predictable correlation between this and any of the ratings we might expect to see on any combo of aroma, appearance, palate and taste - can ratings in these areas predict a range of ABV? 
+`5-` Amongst reviewers that do reviews across multiple beer styles, is there a correlation between how they rate aroma, palate, etc
+`6-` Do certain beer styles get higher ratings during certain times of year - is there a correlation?
 
 ## Project notebooks
 This project will be split across multiple notebooks as follows
 
-* `1- Step 1 - Explore the Data:` this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
+#1- `Step 1 - Explore the Data:` this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
 *  `more to be added as the project evolves`
 
 
