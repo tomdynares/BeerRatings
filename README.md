@@ -42,11 +42,12 @@ I plan to use many if not all of the techs being taught in this class as well as
 ## Project notebooks
 This project will be split across multiple notebooks as follows
 
-#1- `Step 1 - Explore the Data:` this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
-*  `more to be added as the project evolves`
+[`Step 1 - Explore the Data:`]https://github.com/tomdynares/BeerRatings/blob/master/notebooks/1-Explore%20Data.ipynb this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
+
+`more to be added as the project evolves`
 
 
 ## Project data
 This project will contain a variety of datasets depending upon the analysis being conducted,  All datasets will be derived from the initial `beer_reviews.csv`.
 
-* `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from https://data.world/socialmediadata/beeradvocate
+* `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here]https://data.world/socialmediadata/beeradvocate
