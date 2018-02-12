@@ -51,3 +51,8 @@ This project will be split across multiple notebooks as follows
 This project will contain a variety of datasets depending upon the analysis being conducted,  All datasets will be derived from the initial `beer_reviews.csv`.
 
 * `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here](https://data.world/socialmediadata/beeradvocate)
+
+## Other artifacts
+Being a SQL kinda guy, I built an SSIS package (in the SSIS folder) then moved all 1.5million observations into a database.... I further created an SQL folder where I will store any SQL queries I use as sanity check.  The following files may be found here:
+
+* `beer_style_calcs.sql` - This query was used to compare results between SQL Server and Python in terms of calculations perfomred in the `Step 1 - Explore the Data:` notebook.
