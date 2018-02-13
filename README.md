@@ -52,6 +52,27 @@ This project will contain a variety of datasets depending upon the analysis bein
 
 * `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here](https://data.world/socialmediadata/beeradvocate)
 
+* `beer_style_summary` - This contains summary data by beer_style as follows:
+	* `number_of_distinct_reviewers`      int64
+	* `number_of_distinct_brewerys`       int64
+	* `number_of_distinct_beer`           int64
+	* `total_brewerys`                    int64
+	* `pct_brewerys`                    float64
+	* `mean_distinct_brewerys`          float64
+	* `sd_distinct_brewerys`            float64
+	* `Z_distinct_brewerys`             float64
+	* `total_reviewers`                   int64
+	* `pct_reviewers`                   float64
+	* `mean_distinct_reviewers`         float64
+	* `sd_distinct_reviewers`           float64
+	* `Z_distinct_reviewers`            float64
+	* `total_beer`                        int64
+	* `pct_Beer`                        float64
+	* `mean_distinct_beer`              float64
+	* `sd_distinct_beer`                float64
+	* `Z_distinct_beer`                 float64
+
+
 ## Other artifacts
 Being a SQL kinda guy, I built an SSIS package (in the SSIS folder) then moved all 1.5million observations into a database.... I further created an SQL folder where I will store any SQL queries I use as sanity check.  The following files may be found here:
 
