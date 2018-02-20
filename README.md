@@ -1,4 +1,4 @@
-## Metis Introduction to Data Science - Final Project (as of 2/11/2018)
+## Metis Introduction to Data Science - Final Project (as of 2/19/2018)
 
 The dataset that will be used for this project is titled `beer_reviews.csv` and originates from https://data.world/socialmediadata/beeradvocate
 
@@ -39,12 +39,21 @@ I plan to use many if not all of the techs being taught in this class as well as
 
 `6-` Do certain beer styles get higher ratings during certain times of year - is there a correlation?
 
+Note: Due to time contraints the only question being answered in this project is question 1.  Having worked with this question extensively I feel it offers the opportunity to explore in detail many if not most of the technology taught in this class.
+
 ## Project notebooks
 This project will be split across multiple notebooks as follows
 
-[`Step 1 - Explore the Data:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/1-Explore%20Data.ipynb) this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
+[`1 - Explore the Data:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/1-Explore%20Data.ipynb) this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
 
-`more to be added as the project evolves`
+[`2 - Additional Feature Exploration:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/2%20-%20Additional%20Feature%20Exploration.pynb) this notebook builds on the first by conducting summary statistics on both reviewer_profilename and beer_style resulting in the `beer_style_summary.csv` detailed below.
+
+[`3 - Answer question 1:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/3%20-%20Answer%20question%201.pynb) this notebook utilizes numerous techs (Linear Regression, Decision Tree, Bagged and Random Forest).  It focuses on predicting the overall review ranking `review_overall` and makes an important discovery: All forementioned techs return predictions in continous values (3.162, 4.375, etc) and all target values are stored in .5 increments (3.0, 3.5, 4.0, etc).  An attempt is made to scale/normalize the predicted values and then check the RMSE (which oddly enough is higher than it was using the initial predicted values un-scaled/normalized.
+
+[`4 - Explore why RMSE was higher:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/4%20-%20Explore%20why%20RMSE%20was%20higher.pynb) this notebook will revisit the discovery we made while trying to answer question 1 by conducting analysis on the results for both actual predicted values and scaled/normalized predicted values vs actual values.  Ultimately another even more important discovery will be revealed - this question is actually a classification problem NOT a linear problem and therefore an entirely different approach will need to be taken.
+
+[`5 - Answer question 1 as a classification problem:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/
+5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb) this notebook will revisit the initial question only this time utilizing classification technologies.
 
 
 ## Project data
@@ -52,7 +61,14 @@ This project will contain a variety of datasets depending upon the analysis bein
 
 * `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here](https://data.world/socialmediadata/beeradvocate)
 
+* `beer_reviews_reducded.csv` - A condensed (fewer records) of the initial `beer_reviews.csv` dataset
+ 
+* `beer_reviews_minimal.csv` - A greatly condensed (minimal records) of the initial `beer_reviews.csv` dataset
+
+* `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here](https://data.world/socialmediadata/beeradvocate)
+
 * `beer_style_summary` - This contains summary data by beer_style as follows:
+	* `beer_style`      				  object
 	* `number_of_distinct_reviewers`      int64
 	* `number_of_distinct_brewerys`       int64
 	* `number_of_distinct_beer`           int64
@@ -72,6 +88,20 @@ This project will contain a variety of datasets depending upon the analysis bein
 	* `sd_distinct_beer`                float64
 	* `Z_distinct_beer`                 float64
 
+* `beer_reviewer_summary` - This contains summary data by reviewer_profile_name as follows:
+	* `review_profilename`      		  object
+	* `number_of_distinct_brewerys`       int64
+	* `number_of_distinct_beer`           int64
+	* `total_brewerys`                    int64
+	* `pct_brewerys`                    float64
+	* `mean_distinct_brewerys`          float64
+	* `sd_distinct_brewerys`            float64
+	* `Z_distinct_brewerys`             float64
+	* `total_beer`                        int64
+	* `pct_Beer`                        float64
+	* `mean_distinct_beer`              float64
+	* `sd_distinct_beer`                float64
+	* `Z_distinct_beer`                 float64
 
 ## Other artifacts
 Being a SQL kinda guy, I built an SSIS package (in the SSIS folder) then moved all 1.5million observations into a database.... I further created an SQL folder where I will store any SQL queries I use as sanity check.  The following files may be found here:
