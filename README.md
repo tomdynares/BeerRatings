@@ -60,7 +60,7 @@ This project will contain a variety of datasets depending upon the analysis bein
 
 * `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here](https://data.world/socialmediadata/beeradvocate)
 
-* `beer_reviews_reducded.csv` - A condensed (fewer records) of the initial `beer_reviews.csv` dataset
+* `beer_reviews_reduced.zip` - A zip file containing beer_reviews_reduced.csv`.  This is a condensed dataset (fewer records) of the initial `beer_reviews.csv` dataset
  
 * `beer_reviews_minimal.csv` - A greatly condensed (minimal records) of the initial `beer_reviews.csv` dataset
 
