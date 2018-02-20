@@ -39,7 +39,7 @@ I plan to use many if not all of the techs being taught in this class as well as
 
 `6-` Do certain beer styles get higher ratings during certain times of year - is there a correlation?
 
-Note: Due to time contraints the only question being answered in this project is question 1.  Having worked with this question extensively I feel it offers the opportunity to explore in detail many if not most of the technology taught in this class.
+Note: Due to time contraints the only question being answered in this project is question 1.  Having worked with this question extensively I feel it offers the opportunity to explore in detail most of the technology taught in this class.
 
 ## Project notebooks
 This project will be split across multiple notebooks as follows
@@ -52,8 +52,7 @@ This project will be split across multiple notebooks as follows
 
 [`4 - Explore why RMSE was higher:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/4%20-%20Explore%20why%20RMSE%20was%20higher.pynb) this notebook will revisit the discovery we made while trying to answer question 1 by conducting analysis on the results for both actual predicted values and scaled/normalized predicted values vs actual values.  Ultimately another even more important discovery will be revealed - this question is actually a classification problem NOT a linear problem and therefore an entirely different approach will need to be taken.
 
-[`5 - Answer question 1 as a classification problem:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/
-5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb) this notebook will revisit the initial question only this time utilizing classification technologies.
+[`5 - Answer question 1 as a classification problem:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb) this notebook will revisit the initial question only this time utilizing classification technologies.
 
 
 ## Project data
@@ -64,8 +63,6 @@ This project will contain a variety of datasets depending upon the analysis bein
 * `beer_reviews_reducded.csv` - A condensed (fewer records) of the initial `beer_reviews.csv` dataset
  
 * `beer_reviews_minimal.csv` - A greatly condensed (minimal records) of the initial `beer_reviews.csv` dataset
-
-* `beer_reviews.csv` - This is the primary dataset for the project, unfortunately it is too large to include in git hub.  I will try to zip it and see if that works, otherwise it may be downloaded from [here](https://data.world/socialmediadata/beeradvocate)
 
 * `beer_style_summary` - This contains summary data by beer_style as follows:
 	* `beer_style`      				  object
