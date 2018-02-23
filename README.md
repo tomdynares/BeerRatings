@@ -38,7 +38,7 @@ This dataset consists of `1,586,614` observations and has `13` columns as follow
 ## Some questions to be asked of this dataset
 `1-` Is there a steady relationship between appearance, aroma, taste across different beer styles - can an overall rating be predicted based on training data from a given beer style against a different distinct beer style.  
 
-Answer:  Yes [as shown in ](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb)
+Answer:  Yes as shown in [here](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb)
 
 `2-` Of aroma, appearance, palate and taste - what attribute or combo of attributes can lead to an average review (=3), poor review (<3) good review (>3) - what techs to use? linear regression, decision tree, random forest
 
@@ -57,13 +57,13 @@ This project will be split across multiple notebooks as follows
 
 [`1 - Explore the Data:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/1-Explore%20Data.ipynb) this notebook introduces the intial data set in its entirety and starts exploring certain relationships. It further conducts some descriptive analytics in order to better guage opportunities for enhanced data analysis.
 
-[`2 - Additional Feature Exploration:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/2%20-%20Additional%20Feature%20Exploration.pynb) this notebook builds on the first by conducting summary statistics on both reviewer_profilename and beer_style resulting in the `beer_style_summary.csv` detailed below.  Ultimately the two summary datasets built in this step could be used as additional features on our existing dataset.
+[`2 - Additional Feature Exploration:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/2%20-%20Additional%20Feature%20Exploration.ipynb) this notebook builds on the first by conducting summary statistics on both reviewer_profilename and beer_style resulting in the `beer_style_summary.csv` detailed below.  Ultimately the two summary datasets built in this step could be used as additional features on our existing dataset.
 
-[`3 - Answer question 1:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/3%20-%20Answer%20question%201.pynb) this notebook utilizes numerous technologies (Linear Regression, Decision Tree, Bagged and Random Forest).  It focuses on predicting the overall review ranking `review_overall` and makes an important discovery: All forementioned techs return predictions in continous values (3.162, 4.375, etc) and all target values are stored in .5 increments (3.0, 3.5, 4.0, etc).  An attempt is made to scale/normalize the predicted values and then check the RMSE (which oddly enough is higher than it was using the initial predicted values un-scaled/normalized.
+[`3 - Answer question 1:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/3%20-%20Answer%20question%201.ipynb) this notebook utilizes numerous technologies (Linear Regression, Decision Tree, Bagged and Random Forest).  It focuses on predicting the overall review ranking `review_overall` and makes an important discovery: All forementioned techs return predictions in continous values (3.162, 4.375, etc) and all target values are stored in .5 increments (3.0, 3.5, 4.0, etc).  An attempt is made to scale/normalize the predicted values and then check the RMSE (which oddly enough is higher than it was using the initial predicted values un-scaled/normalized.
 
-[`4 - Explore why RMSE was higher:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/4%20-%20Explore%20why%20RMSE%20was%20higher.pynb) this notebook will revisit the discovery we made while trying to answer question 1 by conducting analysis on the results for both actual predicted values and scaled/normalized predicted values vs actual values.  Ultimately another even more important discovery will be revealed - this question is actually a classification problem NOT a linear problem and therefore an entirely different approach will need to be taken.
+[`4 - Explore why RMSE was higher:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/4%20-%20Explore%20why%20RMSE%20was%20higher.ipynb) this notebook will revisit the discovery we made while trying to answer question 1 by conducting analysis on the results for both actual predicted values and scaled/normalized predicted values vs actual values.  Ultimately another even more important discovery will be revealed - this question is actually a classification problem NOT a linear problem and therefore an entirely different approach will need to be taken.
 
-[`5 - Answer question 1 as a classification problem:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb) this notebook will revisit the initial question only this time utilizing classification technologies.
+[`5 - Answer question 1 as a classification problem:`](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20Question%201%20as%20a%20classification%20problem.ipynb) this notebook will revisit the initial question only this time utilizing classification technologies.
 
 
 ## Project data
