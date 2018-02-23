@@ -1,4 +1,4 @@
-## Metis Introduction to Data Science - Final Project (as of 2/19/2018)
+## Metis Introduction to Data Science - Final Project (completed)
 
 The dataset that will be used for this project is titled `beer_reviews.csv` and originates from https://data.world/socialmediadata/beeradvocate
 
@@ -18,7 +18,16 @@ This dataset consists of `1,586,614` observations and has `13` columns as follow
 * `beer_beerid`           int64
 
 ## Techs to explore
-I plan to use many if not all of the techs being taught in this class as well as any others I might come across. As I answer the below questions, I will update with tech used and what I observed.  I will likely also add a section here to discuss the different technologies used and explain how they behaved on their particular applications.
+* `Linear Regression`
+* `Decision Tree Regression`
+* `Bagged Decision Tree Regression`
+* `Random Forest Regression`
+* `K-Means Clustering`
+* `Logistic Regression`
+* `Decision Tree Classification`
+* `Metrics (RMSE, accuracy_score, more`
+* `sns charting capabilities`
+* `numerous home rolled functions and other trickeries`
 
 
 ## Some complications to iron out in this dataset
@@ -28,6 +37,8 @@ I plan to use many if not all of the techs being taught in this class as well as
 
 ## Some questions to be asked of this dataset
 `1-` Is there a steady relationship between appearance, aroma, taste across different beer styles - can an overall rating be predicted based on training data from a given beer style against a different distinct beer style.  
+
+Answer:  Yes [as shown in ](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb)
 
 `2-` Of aroma, appearance, palate and taste - what attribute or combo of attributes can lead to an average review (=3), poor review (<3) good review (>3) - what techs to use? linear regression, decision tree, random forest
 
@@ -65,40 +76,47 @@ This project will contain a variety of datasets depending upon the analysis bein
 * `beer_reviews_minimal.csv` - A greatly condensed (minimal records) of the initial `beer_reviews.csv` dataset
 
 * `beer_style_summary` - This contains summary data by beer_style as follows:
-	* `beer_style`      				  object
-	* `number_of_distinct_reviewers`      int64
-	* `number_of_distinct_brewerys`       int64
-	* `number_of_distinct_beer`           int64
-	* `total_brewerys`                    int64
+	* `beer_style`      				object
+	* `number_of_distinct_reviewers`    int64
+	* `number_of_distinct_brewerys`     int64
+	* `number_of_distinct_beer`         int64
+	* `total_brewerys`                  int64
 	* `pct_brewerys`                    float64
 	* `mean_distinct_brewerys`          float64
 	* `sd_distinct_brewerys`            float64
 	* `Z_distinct_brewerys`             float64
-	* `total_reviewers`                   int64
+	* `total_reviewers`                 int64
 	* `pct_reviewers`                   float64
 	* `mean_distinct_reviewers`         float64
 	* `sd_distinct_reviewers`           float64
 	* `Z_distinct_reviewers`            float64
-	* `total_beer`                        int64
+	* `total_beer`                      int64
 	* `pct_Beer`                        float64
 	* `mean_distinct_beer`              float64
 	* `sd_distinct_beer`                float64
 	* `Z_distinct_beer`                 float64
 
 * `beer_reviewer_summary` - This contains summary data by reviewer_profile_name as follows:
-	* `review_profilename`      		  object
-	* `number_of_distinct_brewerys`       int64
-	* `number_of_distinct_beer`           int64
-	* `total_brewerys`                    int64
+	* `review_profilename`      		object
+	* `number_of_distinct_brewerys`     int64
+	* `number_of_distinct_beer`         int64
+	* `total_brewerys`                  int64
 	* `pct_brewerys`                    float64
 	* `mean_distinct_brewerys`          float64
 	* `sd_distinct_brewerys`            float64
 	* `Z_distinct_brewerys`             float64
-	* `total_beer`                        int64
+	* `total_beer`                      int64
 	* `pct_Beer`                        float64
 	* `mean_distinct_beer`              float64
 	* `sd_distinct_beer`                float64
 	* `Z_distinct_beer`                 float64
+	
+* `rmse_analysis.csv` - This file was used to understand anomalies discovered while trying to answer question 1 using linear regression techniques
+	* `target_value`       				float64
+	* `predicted_value`           		float64
+	* `predicted_value_scaled`          float64
+			
+
 
 ## Other artifacts
 Being a SQL kinda guy, I built an SSIS package (in the SSIS folder) then moved all 1.5million observations into a database.... I further created an SQL folder where I will store any SQL queries I use as sanity check.  The following files may be found here:
