@@ -38,7 +38,7 @@ This dataset consists of `1,586,614` observations and has `13` columns as follow
 ## Some questions to be asked of this dataset
 `1-` Is there a steady relationship between appearance, aroma, taste across different beer styles - can an overall rating be predicted based on training data from a given beer style against a different distinct beer style.  
 
-Answer:  Yes as shown in [here](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20question%201%20as%20a%20classification%20problem.pynb)
+Answer:  Yes as shown in [here](https://github.com/tomdynares/BeerRatings/blob/master/notebooks/5%20-%20Answer%20Question%201%20as%20a%20classification%20problem.ipynb)
 
 `2-` Of aroma, appearance, palate and taste - what attribute or combo of attributes can lead to an average review (=3), poor review (<3) good review (>3) - what techs to use? linear regression, decision tree, random forest
 
